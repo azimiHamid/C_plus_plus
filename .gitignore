@@ -1,0 +1,55 @@
+# Ignore binary files
+*.o
+*.out
+*.exe
+
+# Ignore build files and directories
+/build/
+*.obj
+*.dll
+*.pdb
+*.lib
+*.a
+*.so
+
+# Ignore temporary files
+*.log
+*.tmp
+*.temp
+*.pid
+
+# Ignore editor and IDE configuration files
+*.swp
+*~
+.vscode/
+
+# Ignore MacOS specific files
+.DS_Store
+
+# Ignore Windows specific files
+Thumbs.db
+desktop.ini
+
+# Ignore other C++ IDEs/project files (if applicable)
+*.cbp        # Code::Blocks
+*.csproj     # C#
+*.sln        # Visual Studio
+*.vcxproj    # Visual Studio
+
+# Ignore cmake build directory
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore clang compilation database
+compile_commands.json
+
+# Ignore coverage reports
+*.gcno
+*.gcda
+*.gcov
+
+# Ignore object libraries
+*.a
+*.lib
