@@ -99,11 +99,11 @@
 
 ## <code>#include</code> & <code>using</code> in C++ Vs. <code>import</code> in JavaScript
 
-- <code>#include</code>: In C++, it’s a preprocessing directive used to include code from another file. This is like a direct code copy-and-paste, as the contents of the included file are inserted into the source file before compilation begins.
-- <code>using</code>: It helps to avoid prefixing with the namespace name every time you access a function or variable from that namespace. It does not affect the inclusion of code but rather the visibility of names.
-- import: In JavaScript, it handles module imports, allowing you to use code from other files or libraries with a <code>runtime</code> mechanism. It doesn’t involve copying code but linking/referencing modules.
+- <b><code>#include</code></b>: In C++, it’s a preprocessing directive used to include code from another file. This is like a direct code copy-and-paste, as the contents of the included file are inserted into the source file before compilation begins.
+- <b><code>using</code></b>: It helps to avoid prefixing with the namespace name every time you access a function or variable from that namespace. It does not affect the inclusion of code but rather the visibility of names.
+- <b><code>import</code></b>: In JavaScript, it handles module imports, allowing you to use code from other files or libraries with a <code>runtime mechanism</code>. It doesn’t involve copying code but linking/referencing modules.
 
-### What does mean runtime mechanism in 'JavaScript'
+### What does mean <u>runtime mechanism</u> in 'JavaScript'
 
 - <b>Module Loading</b>: When you use import, JavaScript loads the module or file at runtime (when the code is executed). This is different from compile-time inclusion, like #include in C++, where the code is directly copied into the source file before compilation.
 
@@ -117,22 +117,23 @@ As a developer, understanding the differences between languages can significantl
 
 - ### Compilation vs. Interpretation:
 
-<code>C++</code>: A compiled language where code is translated into machine code before execution. This direct execution by hardware often results in faster performance. <br>
-<code>JavaScript</code>: Primarily an interpreted language, though modern engines use Just-In-Time (JIT) compilation. Code is executed at runtime, which can introduce additional overhead.
+<b><code>C++</code></b>: A compiled language where code is translated into machine code before execution. This direct execution by hardware often results in faster performance. <br>
+<b><code>JavaScript</code></b>: Primarily an interpreted language, though modern engines use Just-In-Time (JIT) compilation. Code is executed at runtime, which can introduce additional overhead.
 
 - ### Static vs. Dynamic Typing:
 
-<code>C++</code>: Statically typed, meaning types are checked at compile-time. This allows for optimizations during compilation. <br>
-<code>JavaScript</code>: Dynamically typed, with type checking occurring at runtime, leading to some performance overhead.
+<b><code>C++</code></b>: Statically typed, meaning types are checked at compile-time. This allows for optimizations during compilation. <br>
+<b><code>JavaScript</code></b>: Dynamically typed, with type checking occurring at runtime, leading to some performance overhead.
 
 - ### Memory Management:
 
-<code>C++</code>: Offers fine-grained control over memory, leading to potentially more optimized and efficient code. <br>
-<code>JavaScript</code>: Uses automatic garbage collection, which introduces some overhead due to periodic memory management.
+<b><code>C++</code></b>: Offers fine-grained control over memory, leading to potentially more optimized and efficient code. <br>
+<b><code>JavaScript</code></b>: Uses automatic garbage collection, which introduces some overhead due to periodic memory management.
 
 - ### Low-Level Operations:
 
-<code>C++</code>: Provides low-level access to system resources and hardware, enabling highly optimized execution for performance-critical tasks. <br>
-<code>JavaScript</code>: Operates at a higher level with additional abstractions, designed for flexibility and ease of use in web development.
+<b><code>C++</code></b>: Provides low-level access to system resources and hardware, enabling highly optimized execution for performance-critical tasks. <br>
+<b><code>JavaScript</code></b>: Operates at a higher level with additional abstractions, designed for flexibility and ease of use in web development.
 <br> <br>
-<b>In summary,</b> C++ excels in performance-critical applications due to its compiled nature, static typing, and low-level control. JavaScript, while potentially slower, offers flexibility and ease of development for web environments. Understanding these differences helps in choosing the right tool for your specific needs.
+
+- <b>Summary : </b> &nbsp; <code>C++</code> excels in performance-critical applications due to its compiled nature, static typing, and low-level control. <code>JavaScript</code>, while potentially slower, offers flexibility and ease of development for web environments. Understanding these differences helps in choosing the right tool for your specific needs.
