@@ -2,43 +2,49 @@
 
 ## C++ 'Hello world' Code Expalin
 
-### Different Ways to Write the 'Hello World' Code in C++:
+### Different Ways to Write "Hello, World!" in C++
 
-1.  With <code>using</code> and <code>namespace</code> keywords
+### 1. Using `namespace` and `using` Keywords
 
-    - 1st method
+- **Method 1:** Full use of `namespace`:
 
-            #include < iostream>
+    ```cpp
+    #include <iostream>
 
-            using namespace std;
+    using namespace std;
 
-            int main() {
-                cout << "Hello, World!" << endl;
-                return 0;
-            }
+    int main() {
+        cout << "Hello, World!" << endl;
+        return 0;
+    }
+    ```
 
-    - 2nd method
+- **Method 2:** Selective use of `using` for specific elements:
 
-            #include < iostream>
+    ```cpp
+    #include <iostream>
 
-            using std::cout;
-            using std::endl;
+    using std::cout;
+    using std::endl;
 
-            int main() {
-                cout << "Hello, World!" << endl;
-                return 0;
-            }
+    int main() {
+        cout << "Hello, World!" << endl;
+        return 0;
+    }
+    ```
 
-  <br />
+### 2. Without `namespace` or `using` Keywords
 
-2.  Without <code>using</code> and <code>namespace</code> keywords
+This approach avoids bringing anything from the standard library into the global namespace, making it clearer where each element comes from.
 
-        #include < iostream>
+```cpp
+#include <iostream>
 
-        int main() {
-            std::cout << "Hello, World!" << std::endl;
-            return 0;
-        }
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
 
 ### <code>#include < iostream></code>
 
