@@ -3,39 +3,35 @@
 #include <iostream>
 using namespace std;
 
-bool checkIsStudentValid(int val) {
-    bool isInputValid = true;
-    if (val != 0 && val != 1) {
-        isInputValid = false;
-    }
-
-    return isInputValid;
+bool isValid(int val) {
+    return (val == 0 || val == 1);
 }
 
 int main() {
 
     int cups;
-    int isStudentInput;
+    int isStudent;
 
     cout << "Are you a student? (1 for YES, 0 for NO): ";
-    cin >> isStudentInput;
+    cin >> isStudent;
 
-    if (!checkIsStudentValid(isStudentInput)) {
-        cout << "Invalid input!\n";
-        return 0;
-    }
+    if (isValid(isStudent)) {
 
-    bool isStudent = bool(isStudentInput);
+        cout << "Enter the number of cups: ";
+        cin >> cups;
 
-    cout << "Enter the number of cups: ";
-    cin >> cups;
+        if (isStudent || cups > 15) {
+            cout << "You're eligible for a discount.\n";
+        } else {
+            cout << "You're NOT eligible for any discount.\n";
+        }
 
-    if (isStudent || cups > 15) {
-        cout << "You're eligible for a discount." << endl;
     } else {
-        cout << "You're NOT eligible yet for any discount." << endl;
+
+        cout << "Invalid Input!\n";
+        return 0;
+
     }
 
     return 0;
 }
-
