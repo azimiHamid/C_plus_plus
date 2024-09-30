@@ -10,7 +10,8 @@ int main() {
     {
         cout << "Do you wnat more Tea? (yes/no) : ";
         getline(cin, response);
-    } while (response == "no");
+
+    } while (response == "Yes" || response == "yes");
     
     
     return 0;
